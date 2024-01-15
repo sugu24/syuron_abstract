@@ -30,7 +30,7 @@
 \twocolumn[\vspace*{29mm}] %タイトルが2行の場合は29mm→36mmに．
 \begin{論文概要}           %この行は消してはいけません
 
-\section{用紙およびページ数}
+\section{はじめに}
 数独パズルは，ペンシルパズルの一種である．
 ペンシルパズルとは，問題に対して答えを徐々に鉛筆で書き込んでいき，
 答えを導くようなパズルのことである．
@@ -53,13 +53,34 @@
 \end{figure}
 \figurename{\ref{fig:problem_and_answer}}左で与えられる問題の
 答えは\figurename{\ref{fig:problem_and_answer}}右である．
-また，ヒントから得られる最終盤面はただ1通りである必要がある．
+また，1つの問題から得られる最終盤面はただ1通りである必要がある．
 以降，数独パズルの最終盤面を「解」と表す．
-先行研究 \cite{previous_research}では，ヒント数が少ない
+先行研究 \cite{previous_research} では，ヒント数が少ない
 数独パズルの問題を効率よく生成することを目的としていたが，
 本研究では，ヒント数17の問題を効率よく生成することを目的とする．
 ヒント数17の下限は17であることは \cite{seventeen_hints} により
 証明されている．
+
+\section{本研究の背景}
+ヒント生成アルゴリズムは \cite{previous_research} の方法を
+改善したものである．\cite{previous_research} のヒント生成アルゴリズムは，
+まず，ヒント集合$H^{(0)} = \emptyset$を用意する．
+$H^{(0)}$の右肩の数字はヒント集合のサイズを表す．
+次に，適切なヒント$h$を$H^{(i)}$に添加していき，
+$H^{(i)}$から得られる解の集合の大きさ$|S(H^{(i)})|$を徐々に減少させていく．
+$h$はマスの位置$p$と数字$n$の組である．
+適切な$h$とは，$H^{(i)}$に添加した後に最も$|S(H^{(i)})|$が減少するような
+$h$のことである．
+最終的には，$|S(H^{(i)})| = 1$となるまで$h$を$H^{(i)}$に添加して問題を生成する．
+$h$の選択方法は，$H^{(i)}$から$S(H^{(i)})$を得て，得た解に出現した場所と
+数字の組である複数の要素のうち最も出現回数が少ない要素を$h$とする．
+なお，$H^{(i)}$から$S(H^{(i)})$を得るためには，
+先行研究のようにバックトラック（BT）を用いればよい．
+一方で，$H^{(i)} ~ (i < 14)$は十分に解集合の大きさが減少せず，
+AXで解を列挙することは効率が悪い．
+そのため，シミュレイテッド・アニーリング（SA）を用いることで
+$H^{(i)}$から得られる解を偏りなく等確率に多く生成することを行い，
+確率的に$h$を選択する．
 
 \section{執筆要領}
 
@@ -222,6 +243,10 @@ F & F & T & F \\ \hline
   There is no 16-clue Sudoku: Solving the Sudoku minimum number of clues problem via hitting set enumeration．
   {\it Experimental Mathematics}, 23:2, pp. 190--217 (2014)．
   
+  \bibitem{AX}
+  D. E. Knuth: Dancing links. 
+  {\it Millennial Perspectives in Computer Science}, pp. 187--214 (2000).
+
   % \bibitem{sa}
   % 池田 智悟，窪田 耕明：シミュレーテッドアニーリング概説．
   % \url{http://mikilab.doshisha.ac.jp/dia/monthly/monthly00/20000415/ikeuchi_kubota.pdf}，参照2021-01-06 (2000).
@@ -230,10 +255,6 @@ F & F & T & F \\ \hline
   % 長谷洋斗，川原純，笠原正治：解の多様性を考慮したビームサーチと局所探索法による
   % フロンティア法を高速化するための変数順序付け．
   % 第112回人工知能基本問題研究会，pp. 30--35 (2020)．
-  
-  % \bibitem{AX}
-  % D. E. Knuth: Dancing links. 
-  % {\it Millennial Perspectives in Computer Science}, pp. 187--214 (2000).
   
 \end{thebibliography}
 
