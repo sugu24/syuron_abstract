@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1705327368 "guide.dvi" "guide.pdf" "guide" 1705327663
-  "guide.dvi" 1705327368 15172 3a7059ea88198f968055d8480a00b035 "latex"
+["dvipdf"] 1705378162 "guide.dvi" "guide.pdf" "guide" 1705378164
+  "guide.dvi" 1705378162 19488 56ffb73354303456c5f79c406c5ed2f5 "latex"
   (generated)
   "guide.pdf"
-["latex"] 1705327365 "guide.tex" "guide.dvi" "guide" 1705327663
+["latex"] 1705378159 "guide.tex" "guide.dvi" "guide" 1705378164
   "2-1.eps" 1705311217 40074 cf455fb524ec190d32664873e681ede9 ""
   "2-2.pdf" 1705311217 21873 66e411aa6a2f14db64433ae37b85c55e ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1639616584 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -20,6 +20,7 @@
   "c:/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth9.tfm" 1639617358 856 bed293689e159275e10c27a9927115b7 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1639617358 856 39c171483fe1bb7d0e1368980c0c205b ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin6.tfm" 1639617358 856 e782a1e1d78799594d137f0fef162b39 ""
+  "c:/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin8.tfm" 1639617358 856 bdef40bcf3aed4751efa9be9bfa6eb4b ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin9.tfm" 1639617358 856 b22b8128b44bf8881977f2c74b361f47 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1639616284 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1639616284 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -52,13 +53,13 @@
   "c:/texlive/2021/texmf-dist/web2c/texmf.cnf" 1639616809 39972 3d6bb4d9d719e93193fa020b58adf5d4 ""
   "c:/texlive/2021/texmf-var/web2c/eptex/platex.fmt" 1639619874 2717009 e7567be8542187dacc001b66305504b7 ""
   "c:/texlive/2021/texmf.cnf" 1639618390 713 e69b156964470283e0530f5060668171 ""
-  "guide.aux" 1705327368 3133 ab3d62220008a54cb0149c9cf6797ca4 "latex"
-  "guide.tex" 1705327352 11471 3abb5c711e89210cc7815bdfc776c852 ""
+  "guide.aux" 1705378162 3267 79c6452a0fb70f8c2ecf500e13dfeafc "latex"
+  "guide.tex" 1705378152 13600 ec19e04bb892578eff8ca4fec7816a09 ""
   "ieabst.sty" 1705311217 6654 966947947ed5cb1d212115d8c9bc2d04 ""
   "newenum.sty" 1705311217 973 888cfdae08ede295a84aa3cf8af0897a ""
   "‰ñ“š.png" 1673523416 41368 f5524bf39cd8e2b70494b2e74665e78f ""
   "–â‘è.png" 1673523416 15846 ad416bb8a051da330b1a982c6003fc48 ""
   (generated)
-  "guide.log"
   "guide.dvi"
+  "guide.log"
   "guide.aux"

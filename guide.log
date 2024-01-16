@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.sjis) (TeX Live 2021/W32TeX) (preloaded format=platex 2021.12.16)  15 JAN 2024 23:02
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.sjis) (TeX Live 2021/W32TeX) (preloaded format=platex 2021.12.16)  16 JAN 2024 13:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -111,30 +111,21 @@ File: 問題.png Graphic file (type bmp)
 File: 回答.png Graphic file (type bmp)
 <回答.png>
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 87.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 115.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 87.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 115.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 122.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 127.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 131.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 87.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 117.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 117.
-
-
-LaTeX Warning: Citation `paper1' on page 1 undefined on input line 117.
-
-
-LaTeX Warning: Citation `paper2' on page 1 undefined on input line 117.
-
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <7> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 150.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <7> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 150.
+(Font)              <7> on input line 151.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 153.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 156.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 153.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 156.
 
 Overfull \hbox (2.22221pt too wide) has occurred while \output is active
 [] 
@@ -144,39 +135,49 @@ Overfull \hbox (2.22221pt too wide) has occurred while \output is active
 
 
 ]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 181.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 181.
+
+
+LaTeX Warning: Citation `paper1' on page 2 undefined on input line 181.
+
+
+LaTeX Warning: Citation `paper2' on page 2 undefined on input line 181.
+
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <7> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 214.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <7> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 214.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 183.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 247.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 183.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 247.
 File: 2-1.eps Graphic file (type eps)
 <2-1.eps>
 File: 2-2.pdf Graphic file (type pdf)
 <2-2.pdf>
 
+LaTeX Warning: Citation `paper1' on page 2 undefined on input line 293.
 
-LaTeX Warning: Citation `paper1' on page 2 undefined on input line 229.
 
+LaTeX Warning: Citation `paper2' on page 2 undefined on input line 293.
 
-LaTeX Warning: Citation `paper2' on page 2 undefined on input line 229.
+[2] [3
 
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 239.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 244.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 248.
-[2] (./guide.aux)
+] (./guide.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 983 strings out of 479466
- 14447 string characters out of 5873880
- 325337 words of memory out of 5000000
- 18696 multiletter control sequences out of 15000+600000
- 416831 words of font info for 78 fonts, out of 8000000 for 9000
+ 988 strings out of 479466
+ 14487 string characters out of 5873880
+ 328337 words of memory out of 5000000
+ 18700 multiletter control sequences out of 15000+600000
+ 417020 words of font info for 79 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 68i,14n,74p,204b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,14n,74p,204b,593s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on guide.dvi (2 pages, 15172 bytes).
+Output written on guide.dvi (3 pages, 19488 bytes).

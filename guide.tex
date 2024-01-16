@@ -82,6 +82,70 @@ AXで解を列挙することは効率が悪い．
 $H^{(i)}$から得られる解を偏りなく等確率に多く生成することを行い，
 確率的に$h$を選択する．
 
+先行研究 \cite{previous_research} のヒント数17の問題生成割合は
+約5.5\%であった．\cite{previous_research} を改良した本研究では，
+ヒント数17の問題生成割合が約93\%まで向上した．
+また，数独1問を生成する平均時間は，同環境
+\footnote{実行環境は以下の通りである： 
+OS：Linux Ubuntu 16.04.7，
+CPU：Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz，
+メモリ：64G，
+コンパイラ：gcc5.4.0．
+}
+でプログラムを実行した結果，先行研究が約105分であった
+のに対し，本研究では約11分であった．
+したがって，ヒント数17の問題を生成する平均時間は約0.6\%へ短縮した．
+改良した点は主に4点であり，2点はヒント数17の問題生成割合を高めるための
+改良で，残りの2点はヒント生成の高速化のために行った改良である．
+ヒント数17の問題生成割合の向上のための改良1点目は，
+生成した$H^{(14)}$に3つの$h$をまとめて添加するようにした点である．
+これにより，生成した$H^{(14)}$があるヒント数17の問題の部分集合である
+場合は，必ずそのヒント数17の問題を生成できるようになる．
+また，この改善により，生成した$H^{(14)}$の解集合が小さいときほど，
+ヒント数17の問題を生成しやすくなることが実験により分かっている．
+2点目は，生成していく$H^{(i)}$の解集合を柔軟に減少させていくために，
+最も解集合が小さい$w$個の$H^{(i)}$を保持していく
+ビームサーチ（BS）を用いた点である \cite{nagao}．
+本研究で行うBSには一般的なBSにはないパラメータがあり，
+1つの$H^{(i)}$から生成する$H^{(i+1)}$の個数の上限$\rho$を設けている．
+パラメータ$\rho$は，解集合が減少していきずらい$H^{(i)}$から生成された
+$H^{(i+1)}$のみをBSで保持することを避ける目的がある．
+ヒント生成の高速化のための改良1点目は，
+
+\begin{thebibliography}{10}
+
+  \bibitem{previous_research}
+  古川 湧：ヒントの少ない数独パズルの生成に関する研究．$2020$年度名城大学大学院理工学研究科修士論文（2021）．
+  
+  \bibitem{nagao}
+  長尾 卓：ビームサーチを用いたヒント数17の数独パズルの効率的な生成について．
+  {\it ゲームプログラミングワークショップ2022論文集}，pp. 96--103 (2022)．
+  
+  \bibitem{seventeen_hints}
+  G. McGuire, B. Tugemann, and G. Civario:
+  There is no 16-clue Sudoku: Solving the Sudoku minimum number of clues problem via hitting set enumeration．
+  {\it Experimental Mathematics}, 23:2, pp. 190--217 (2014)．
+  
+  \bibitem{AX}
+  D. E. Knuth: Dancing links. 
+  {\it Millennial Perspectives in Computer Science}, pp. 187--214 (2000).
+
+  \bibitem{mcmc}
+  Berg, B.: Markov Chain Monte Carlo Simulations and Their Statistical
+  Analysis. World Scientific Publishing Co. Pte. Ltd. (2004)．
+
+  \bibitem{sa}
+  Bruce E. Rosen，中野 良平：シミュレーテッドアニーリング：ー基礎と最新技術ー，
+  人工知能学会誌，Vol.9，No.3，pp.365--372（1994）．
+  
+  \bibitem{beam_search}
+  Y. Inoue and S. Minato: Acceleration of ZDD Construction for Subgraph 
+  Enumeration via Path-width Optimization. TCS Technical Report, 
+  TSC-TR-A-16-80, (2016)．
+  
+\end{thebibliography}
+
+
 \section{執筆要領}
 
 \subsection{マージン}
@@ -227,36 +291,6 @@ F & F & T & F \\ \hline
 
 \subsection{参考文献のサンプル}
 参考文献引用のサンプルです~\cite{paper1}\cite{paper2}．
-
-
-\begin{thebibliography}{10}
-
-  \bibitem{previous_research}
-  古川 湧：ヒントの少ない数独パズルの生成に関する研究．$2020$年度名城大学大学院理工学研究科修士論文（2021）．
-  
-  \bibitem{nagao}
-  長尾 卓：ビームサーチを用いたヒント数17の数独パズルの効率的な生成について．
-  {\it ゲームプログラミングワークショップ2022論文集}，pp. 96--103 (2022)．
-  
-  \bibitem{seventeen_hints}
-  G. McGuire, B. Tugemann, and G. Civario:
-  There is no 16-clue Sudoku: Solving the Sudoku minimum number of clues problem via hitting set enumeration．
-  {\it Experimental Mathematics}, 23:2, pp. 190--217 (2014)．
-  
-  \bibitem{AX}
-  D. E. Knuth: Dancing links. 
-  {\it Millennial Perspectives in Computer Science}, pp. 187--214 (2000).
-
-  % \bibitem{sa}
-  % 池田 智悟，窪田 耕明：シミュレーテッドアニーリング概説．
-  % \url{http://mikilab.doshisha.ac.jp/dia/monthly/monthly00/20000415/ikeuchi_kubota.pdf}，参照2021-01-06 (2000).
-  
-  % \bibitem{beamsearch}
-  % 長谷洋斗，川原純，笠原正治：解の多様性を考慮したビームサーチと局所探索法による
-  % フロンティア法を高速化するための変数順序付け．
-  % 第112回人工知能基本問題研究会，pp. 30--35 (2020)．
-  
-\end{thebibliography}
 
 \end{論文概要} %この行は消してはいけません
 \end{document}
