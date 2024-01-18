@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1705505471 "guide.dvi" "guide.pdf" "guide" 1705505472
-  "guide.dvi" 1705505471 21020 e759e88697a215596762d676e05ea950 "latex"
+["dvipdf"] 1705542288 "guide.dvi" "guide.pdf" "guide" 1705542290
+  "guide.dvi" 1705542288 20912 2962946d7211374a79cf8ad01ab7cf8f "latex"
   (generated)
   "guide.pdf"
-["latex"] 1705505467 "guide.tex" "guide.dvi" "guide" 1705505472
+["latex"] 1705542284 "guide.tex" "guide.dvi" "guide" 1705542290
   "ans.png" 1705491028 41368 f5524bf39cd8e2b70494b2e74665e78f ""
   "best_beam_width_and_rho.png" 1705491028 48091 104317f8dabfd5055af19dbc7d287668 ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1639616584 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -45,14 +45,14 @@
   "c:/texlive/2021/texmf-dist/web2c/texmf.cnf" 1639616809 39972 3d6bb4d9d719e93193fa020b58adf5d4 ""
   "c:/texlive/2021/texmf-var/web2c/eptex/platex.fmt" 1639619874 2717009 e7567be8542187dacc001b66305504b7 ""
   "c:/texlive/2021/texmf.cnf" 1639618390 713 e69b156964470283e0530f5060668171 ""
-  "guide.aux" 1705505471 2429 265df049b3a63be9f0ceb702623cc06e "latex"
-  "guide.tex" 1705505461 16832 52d4e8ef842a00df852abbc6d4088a3f ""
+  "guide.aux" 1705542288 2377 43632bc9f81d161079e63a313d25e8e1 "latex"
+  "guide.tex" 1705542278 16895 7695d074aa5db9825715a266b9aa9ee6 ""
   "ieabst.sty" 1705311217 6654 966947947ed5cb1d212115d8c9bc2d04 ""
   "newenum.sty" 1705311217 973 888cfdae08ede295a84aa3cf8af0897a ""
   "prob.png" 1705491028 15846 ad416bb8a051da330b1a982c6003fc48 ""
   "w_rho_efficiency_17hint.png" 1705311551 54342 c67a95eeac53e7c33202679760f35233 ""
   "w_rho_prob_17hint.png" 1705496714 65837 243e24de499e347cde3d65ca8fd27ead ""
   (generated)
-  "guide.aux"
   "guide.log"
   "guide.dvi"
+  "guide.aux"
