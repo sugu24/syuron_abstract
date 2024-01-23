@@ -6,6 +6,7 @@
 \documentclass[a4paper, 9pt]{jarticle}
 \usepackage{ieabst}
 \usepackage{newenum}
+\usepackage[font=small]{caption}
 \usepackage[dvipdfmx]{graphicx}
 
 %タイトルが長い場合は，勝手に改行されます．
@@ -150,7 +151,7 @@ BTで解を列挙することは効率が悪い．
 約5\%向上して約10\%になった．
 2点目は，$H^{(i)}$の解集合の大きさを柔軟に減少させていくために，
 解集合が最小の$w$個の$H^{(i)}$を
-保持していくBSを用いた点である．
+保持していくBSを用いた点である \cite{nagao}．
 生成した$H^{(14)}$の解集合が小さいときほど，
 $H^{(14)}$に3つのヒントを添加する場合に，
 ヒント数17の問題が生成しやすくなることは実験により分かっている．
@@ -159,7 +160,6 @@ $H^{(14)}$に3つのヒントを添加する場合に，
 パラメータ$\rho$は，解集合が減少していきずらい$H^{(i)}$から構築された
 $H^{(i+1)}$のみをBSで保持することを避ける目的がある．
 \begin{figure}[bt]
-  \vspace{-3mm}
   \centering
   \includegraphics[keepaspectratio, scale=0.4]{best_beam_width_and_rho.png}
   \caption{ビーム幅$w$と上限$\rho$~$(2 \leq \rho \leq w \leq 10)$により，
@@ -200,7 +200,6 @@ $H^{(i)} ~ (i \geq 14)$から解集合を得るためにBTではなく，
 % ヒント数17の問題生成割合の結果を\figurename{\ref{fig:}}に示し，
 % 1つのヒント数17の問題を生成する平均時間を\figurename{\ref{fig:}}に示す．
 \begin{figure}[bt]
-  \vspace{-3mm}
   \centering
   \includegraphics[keepaspectratio, scale=0.3]{w_rho_prob_17hint.png}
   \caption{$w,\rho$~$(2 \leq w \leq 10,\rho:2,w)$と
@@ -209,7 +208,6 @@ $H^{(i)} ~ (i \geq 14)$から解集合を得るためにBTではなく，
   \label{fig:w_rho_prob_17hint}
 \end{figure}
 \begin{figure}[bt]
-  \vspace{-2mm}
   \centering
   \includegraphics[keepaspectratio, scale=0.4]{w_rho_efficiency_17hint.png}
   \caption{\figurename{\ref{fig:w_rho_prob_17hint}}の結果より
@@ -272,6 +270,10 @@ $H^{(14)}$に3つのヒントをまとめて添加する変更を行い，
   D. E. Knuth: Dancing links. 
   {\it Millennial Perspectives in Computer Science}, pp. 187--214 (2000).
   
+  \bibitem{nagao}
+  長尾 卓，山本 修身：ビームサーチを用いたヒント数17の数独パズルの効率的な生成について．
+  {\it ゲームプログラミングワークショップ2022論文集}，pp. 96--103 (2022)．
+
 \end{thebibliography}
 
 \end{論文概要} %この行は消してはいけません
